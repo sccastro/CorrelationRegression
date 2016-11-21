@@ -1,0 +1,80 @@
+
+---
+title: "Modeling and prediction for movies"
+author: "Spencer Castro"
+date: "November 17, 2016"
+output: 
+  html_document:
+    code_folding: hide
+    fig_height: 4
+    highlight: pygments
+    theme: spacelab
+    toc: yes
+---
+
+## Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = 'center', warning = FALSE, message = FALSE, results = 'hide')
+```
+
+### Load packages
+
+```{r load-packages, message = FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+### Load data
+
+
+```{r load-data, }
+load("movies.Rdata")
+
+```
+
+
+* * *
+
+## Part 1: Data
+
+The data are <b>651 randomly sampled</b> movies collected from the movie review sites Rotten Tomatoes and IMDB. There are <b>32</b> variables associated with each movie. This sampling of movies should be representative enough of the population (all movies/all opinions about movies) in order to make inference predictions. However, the ratings systems, critics, and fans that rate movies on these sites are a self-selecting population and may skew the ratings away from the true representation of the movie-going population. Also, the IMDB and Rotten Tomatoes reviews will likely be colinear in the sense that people who review movies look at other people's reviews and are therefore not independent. Also, there can be <b>no causal relationship</b> applied to this data due to its observational nature and <b>no experimental manipulation of randomly assigning movies or raters to groups</b>. 
+
+
+* * *
+
+## Part 2: Research question
+
+In order to assess the popularity of movies and to gain new insights, we can look at a few variables that may have an association with movie ratings.Due to the fact that there is no variable for revenue, we will use critic and audience ratings as a proxy for movie popularity.
+
+
+
+
+
+* * *
+
+## Part 3: Exploratory data analysis
+
+NOTE: Insert code chunks as needed by clicking on the "Insert a new code chunk" 
+button above. Make sure that your code is visible in the project you submit. 
+Delete this note when before you submit your work.
+
+* * *
+
+## Part 4: Modeling
+
+NOTE: Insert code chunks as needed by clicking on the "Insert a new code chunk" 
+button above. Make sure that your code is visible in the project you submit. 
+Delete this note when before you submit your work.
+
+* * *
+
+## Part 5: Prediction
+
+NOTE: Insert code chunks as needed by clicking on the "Insert a new code chunk" 
+button above. Make sure that your code is visible in the project you submit. 
+Delete this note when before you submit your work.
+
+* * *
+
+## Part 6: Conclusion
